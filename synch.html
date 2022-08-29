@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+	a=new Array();
+	var sum=0;
+	function f1(){
+	document.write("Sum of elements in an array"+"<br>");
+	}
+	function f2(n){
+	for(i=0;i<n;i++){
+	a[i]=parseInt(window.prompt("enter "+(i+1)+"element"+"<br>"));	
+	}	
+	}
+	function f3(n){
+	for(i=0;i<n;i++){
+		sum=sum+a[i];	
+	}
+	document.write(sum+"<br>");
+	}
+	f1();
+	f2(5);
+	f3(5);
+	
+</script>
+</body>
+</html>
