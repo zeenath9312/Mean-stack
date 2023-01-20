@@ -1,0 +1,15 @@
+const crypto = require('crypto');
+
+// Defining key
+const username ='username';
+
+// Calling createHash method
+const un = crypto.createHash('sha256', username).digest('hex');
+
+const password='password';
+const pwd = crypto.createHash('sha256', password).digest('hex');
+
+
+// Displays output
+console.log(un);
+console.log(pwd);
